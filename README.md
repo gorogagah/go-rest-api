@@ -82,7 +82,7 @@ go run main.go
 
 ## 🧑‍💻 Author
 
-Made with ❤️ by [Your Name](https://github.com/gorogagah)
+Made with ❤️ by [gorogagah](https://github.com/gorogagah)
 
 Follow me on [Medium](https://medium.com/@gorogagah) or [LinkedIn](https://www.linkedin.com/in/anggoro-gagah/) for more beginner Go tutorials.
 
