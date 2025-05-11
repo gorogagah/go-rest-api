@@ -3,7 +3,7 @@
 This is a simple RESTful API built with [Golang](https://go.dev/), [Gin](https://github.com/gin-gonic/gin), and [MongoDB](https://www.mongodb.com/). It's designed as a beginner-friendly project to help you get started with building APIs in Go.
 
 📝 **Based on this article:**  
-👉 [Getting Started with REST APIs in Golang: A Practical Guide](#)
+👉 [Getting Started with REST APIs in Golang: A Practical Guide](https://medium.com/@gorogagah/get-started-with-go-golang-rest-apis-dd58c8a468ed)
 
 ---
 
@@ -73,8 +73,8 @@ go run main.go
 
 ```json
 {
-  "title": "The Go Programming Language",
-  "author": "Alan A. A. Donovan"
+  "title": "Harry Potter and the Philosopher's Stone",
+  "author": "J. K. Rowling"
 }
 ```
 
