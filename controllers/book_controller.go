@@ -12,7 +12,7 @@ import (
 	"go.mongodb.org/mongo-driver/v2/mongo"
 )
 
-var collection *mongo.Collection = config.ConnectDB().Database("bookdb").Collection("books")
+var collection *mongo.Collection = config.ConnectDB().Database("your-database").Collection("books")
 
 func CreateBook(c *gin.Context) {
 	var book models.Book

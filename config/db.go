@@ -14,7 +14,7 @@ import (
 var DB *mongo.Client
 
 func ConnectDB() *mongo.Client {
-	client, err := mongo.Connect(options.Client().ApplyURI("[your-mongodb-address]").SetServerAPIOptions(options.ServerAPI(options.ServerAPIVersion1)))
+	client, err := mongo.Connect(options.Client().ApplyURI("[your-mongodb-uri]").SetServerAPIOptions(options.ServerAPI(options.ServerAPIVersion1)))
 	if err != nil {
 		log.Fatal(err)
 	}
