@@ -3,13 +3,16 @@
 This is a simple RESTful API built with [Golang](https://go.dev/), [Gin](https://github.com/gin-gonic/gin), and [MongoDB](https://www.mongodb.com/). It's designed as a beginner-friendly project to help you get started with building APIs in Go.
 
 📝 **Based on this article:**  
-👉 [Getting Started with REST APIs in Golang: A Practical Guide](https://medium.com/@gorogagah/get-started-with-go-golang-rest-apis-dd58c8a468ed)
+1. 👉 [Getting Started with REST APIs in Golang: A Practical Guide](https://medium.com/@gorogagah/get-started-with-go-golang-rest-apis-dd58c8a468ed)
+2. 👉 [JWT Auth in Golang REST API — A Beginner’s Guide](https://medium.com/@gorogagah/jwt-auth-in-golang-rest-api-a-beginners-guide-5ce5c0c1d3d0)  
 
 ---
 
 ## 🚀 Features
 
 - Create, Read, Update, Delete (CRUD) operations on books
+- JWT-based authentication
+- Session management with MongoDB
 - Clean project structure (models, routes, controllers)
 - MongoDB connection using official Go driver
 - Simple and easy to follow
@@ -22,11 +25,17 @@ This is a simple RESTful API built with [Golang](https://go.dev/), [Gin](https:/
 go-rest-api/
 ├── main.go
 ├── controllers/
-│ └── book_controller.go
+│ ├── book_controller.go
+│ └── auth_controller.go
 ├── models/
-│ └── book.go
+│ ├── book.go
+│ ├── user.go
+│ └── session.go
 ├── routes/
-│ └── book_routes.go
+│ ├── book_routes.go
+│ └── user_routes.go
+├── middleware/
+│ └── auth_middleware.go
 ├── config/
 │ └── db.go
 ```
@@ -59,6 +68,8 @@ go run main.go
 
 ## 🔌 API Endpoints
 
+### Books
+
 | Method | Endpoint    | Description       |
 | ------ | ----------- | ----------------- |
 | GET    | /books      | Get all books     |
@@ -66,6 +77,14 @@ go run main.go
 | POST   | /books      | Create a new book |
 | PUT    | /books/\:id | Update a book     |
 | DELETE | /books/\:id | Delete a book     |
+
+### Authentication
+
+| Method | Endpoint       | Description                 |
+| ------ | -------------- | --------------------------- |
+| POST   | /auth/register | Register a user             |
+| POST   | /auth/login    | Login and get JWT           |
+| GET    | /auth/logout   | Logout (invalidate session) |
 
 ---
 
